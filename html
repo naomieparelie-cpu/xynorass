@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xynora – Système de surveillance vidéo IA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= HEADER ================ -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">⦿</span>
+        <span class="logo-text">Xynora</span>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#hero">Maison</a></li>
+          <li><a href="#surveillance">Surveillance</a></li>
+          <li><a href="#features">Fonctionnalités</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#how-it-works">Comment ça marche</a></li>
+          <li><a href="#pricing">Tarifs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-outline nav-login">Se connecter</button>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#hero">Maison</a></li>
+      <li><a href="#surveillance">Surveillance</a></li>
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#how-it-works">Comment ça marche</a></li>
+      <li><a href="#pricing">Tarifs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="btn btn-outline mobile-login">Se connecter</button></li>
+    </ul>
+  </div>
+
+  <!-- ================= HERO ================ -->
+  <section class="hero" id="hero">
+    <div class="hero-gradient"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge">Surveillance interactive</span>
+
+        <h1>
+          <span>Système de surveillance</span>
+          <span class="gradient-text">vidéo basé sur l'IA</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Surveillez plusieurs flux vidéo en temps réel, détectez les actions personnalisées grâce à l’IA et recevez des alertes instantanées.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#surveillance" class="btn btn-primary">
+            👁️ Tableau de bord de surveillance ouvert
+          </a>
+          <p class="hero-note">Aucun engagement. Testez la plateforme en quelques minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACCÈS RAPIDE ================ -->
+  <section class="section" id="surveillance">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Accès rapide</h2>
+        <p>Choisissez comment vous souhaitez analyser la vidéo.</p>
+      </div>
+
+      <div class="quick-access-grid">
+        <article class="card quick-card">
+          <div class="icon-circle">📷</div>
+          <h3>Appareil photo</h3>
+          <p>Utilisez votre webcam pour l’analyse en direct.</p>
+          <a href="#contact" class="card-link">Commencer →</a>
+        </article>
+
+        <article class="card quick-card">
+          <div class="icon-circle icon-pink">⬆️</div>
+          <h3>Téléchargement vidéo</h3>
+          <p>Analyser les fichiers vidéo préenregistrés.</p>
+          <a href="#contact" class="card-link">Commencer →</a>
+        </article>
+
+        <article class="card quick-card">
+          <div class="icon-circle icon-blue">👁️</div>
+          <h3>Flotte de caméras</h3>
+          <p>Gérer plusieurs flux de caméras HLS.</p>
+          <a href="#contact" class="card-link">Commencer →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FONCTIONNALITÉS ================ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Fonctionnalités de surveillance performantes</h2>
+        <p>La vidéosurveillance professionnelle basée sur l’IA.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="card feature-card">
+          <h3>Surveillance en direct</h3>
+          <p>Connectez les flux HLS et surveillez-les 24/7.</p>
+        </article>
+
+        <article class="card feature-card">
+          <h3>Détection IA personnalisée</h3>
+          <p>Définissez les actions à détecter : intrusion, chute, etc.</p>
+        </article>
+
+        <article class="card feature-card">
+          <h3>Alertes en temps réel</h3>
+          <p>Notifications instantanées par e-mail, SMS ou webhook.</p>
+        </article>
+
+        <article class="card feature-card">
+          <h3>Tableau de bord analytique</h3>
+          <p>Historique, statistiques et visualisation des événements.</p>
+        </article>
+
+        <article class="card feature-card">
+          <h3>Intégration facile</h3>
+          <p>Fonctionne avec caméras IP, RTSP/HLS, NVR.</p>
+        </article>
+
+        <article class="card feature-card">
+          <h3>Haut niveau de sécurité</h3>
+          <p>Système cloud sécurisé + contrôle des accès.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= À PROPOS ================ -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div>
+        <h2>À propos de Xynora</h2>
+        <p>
+          Xynora développe une technologie avancée de vidéosurveillance basée sur l’IA. Notre mission :
+          rendre la sécurité proactive et intelligente.
+        </p>
+        <p>
+          Nous combinons vision par ordinateur, modèles IA et automatisation pour détecter en temps réel
+          les événements critiques sur n’importe quelle caméra.
+        </p>
+      </div>
+
+      <div class="about-side">
+        <h3>Nos valeurs</h3>
+        <ul class="pill-list">
+          <li>Innovation</li>
+          <li>Sécurité</li>
+          <li>Fiabilité</li>
+          <li>Transparence</li>
+        </ul>
+
+        <div class="contact-box">
+          <h4>Nous contacter</h4>
+          <p>📞 514-623-0240</p>
+          <p>✉️ infos@xynora-ai.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMENT ÇA MARCHE ================ -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Comment ça marche ?</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Ajouter des caméras</h3>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Configurer la détection</h3>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Recevoir des alertes</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TARIFS ================ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Tarifs</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="card pricing-card">
+          <h3>Starter</h3>
+          <p class="price">29 $ / mois</p>
+        </article>
+
+        <article class="card pricing-card pricing-featured">
+          <h3>Pro</h3>
+          <p class="price">79 $ / mois</p>
+        </article>
+
+        <article class="card pricing-card">
+          <h3>Entreprise</h3>
+          <p class="price">Sur mesure</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================ -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contactez-nous</h2>
+        <p><strong>Téléphone :</strong> 514-623-0240</p>
+        <p><strong>Email :</strong> infos@xynora-ai.com</p>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message"></textarea>
+        </div>
+
+        <button class="btn btn-primary full">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="logo-icon">⦿</span>
+        <span class="logo-text">Xynora</span>
+        <span class="footer-copy">© <span id="year"></span> Xynora</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
